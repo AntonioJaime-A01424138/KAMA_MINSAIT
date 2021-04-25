@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="KAMA_MINSAIT:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>KAMA_MINSAIT</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="KAMA_MINSAIT-1.0.war">
+      <element id="artifact" artifact-name="KAMA_MINSAIT:war exploded" />
+    </root>
+  </artifact>
+</component>
