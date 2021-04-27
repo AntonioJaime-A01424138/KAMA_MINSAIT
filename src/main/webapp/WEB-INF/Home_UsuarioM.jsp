@@ -95,23 +95,17 @@
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
             <a class="navbar-brand brand-logo mr-5" href="auth"><img
-                    src="${pageContext.request.contextPath}/images/Minsait-logo.png" class="mr-2" alt="logo"/></a>
+                    src="${pageContext.request.contextPath}/images/Minsait-logo.png" class="mr-2" alt="logo" /></a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
-            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-                <span class="icon-menu"></span>
-            </button>
             <ul class="navbar-nav navbar-nav-right">
                 <li class="nav-item nav-profile dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-                        <img src="${pageContext.request.contextPath}/images/faces/face28.jpg" alt="profile"/>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-                        <a class="dropdown-item">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="profileDropdown">
+                        <form action="logout" method="get">
                             <i class="ti-power-off text-primary"></i>
-                            Logout
-                        </a>
-                    </div>
+                            <input name="logout" id="logout" type="submit" value="logout"/>
+                        </form>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -119,32 +113,9 @@
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
         <!-- partial:partials/_sidebar.html -->
-        <nav class="sidebar sidebar-offcanvas" id="sidebar">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="auth">
-                        <i class="icon-grid menu-icon"></i>
-                        <span class="menu-title">Inicio</span>
-                    </a>
-                </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false"
-                       aria-controls="tables">
-                        <i class="icon-grid-2 menu-icon"></i>
-                        <span class="menu-title">Tables</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" href="auth" aria-expanded="false" aria-controls="auth">
-                        <i class="icon-head menu-icon"></i>
-                        <span class="menu-title">Perfil</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
         <!-- partial -->
-        <div class="main-panel">
+
             <div class="content-wrapper">
                 <div class="row">
                     <div class="col-md-12 grid-margin">
@@ -159,8 +130,6 @@
 
                 <div class="row">
                     <div class="col-md-12 grid-margin">
-                        <div class="row">
-                            <h5 class="font-weight-bold">Tabla de los candidatos </h5>
 
                             <table id="example1" class="display expandable-table" style="width:100%">
                                 <thead>
@@ -169,6 +138,8 @@
                                     <th>Teléfono</th>
                                     <th>Correo</th>
                                     <th>Curp</th>
+                                    <th>Formacion</th>
+                                    <th>Área de interés</th>
                                     <th>Visualizaciones</th>
                                 </tr>
                                 </thead>
@@ -182,6 +153,8 @@
                                         <td><c:out value="${candidato.telefono}"/></td>
                                         <td><c:out value="${candidato.correo}"/></td>
                                         <td><c:out value="${candidato.curp}"/></td>
+                                        <td><c:out value="${candidato.formacion}"/></td>
+                                        <td><c:out value="${candidato.area}"/></td>
                                         <td>
                                             <button type="button" id="${candidato.idCandidato}"
                                                     class="btn btn-primary datos" data-toggle="modal"
@@ -194,7 +167,7 @@
 
                                 </tbody>
                             </table>
-                        </div>
+
 
                         <!-- content-wrapper ends -->
                         <!-- partial:partials/_footer.html -->
@@ -212,7 +185,7 @@
                     <!-- page-body-wrapper ends -->
                 </div>
             </div>
-        </div>
+
 
         <!-- The Modal -->
         <div class="modal fade" id="Modal">
@@ -228,8 +201,8 @@
                     <div class="modal-body">
                         <h4>Información personal</h4>
                         <form action="reporte" method="post">
-                            <input type="hidden" id="miid" name="idcand" value=""/>
-                            <input type="submit" value="Descargar"/>
+                            <input type="hidden" name="idCandidato" id="idCandidato" value=""/>
+                              <input type="submit" value="Descargar"/>
                         </form>
                         <table class="table table-hover table-primary">
                             <tbody>

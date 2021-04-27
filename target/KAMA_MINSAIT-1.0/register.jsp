@@ -45,6 +45,30 @@
                                 <label for="password" class="sr-only">Password</label>
                                 <input type="password" name="password" id="password" class="form-control" placeholder="*****"/>
                             </div>
+                            <div class="form-group mb-4">
+                                <label for="formacion" class="sr-only">Formacion Academica</label>
+                                <input type="formacion" name="formacion" id="formacion" class="form-control" placeholder="Formacion Academica"/>
+                            </div>
+                            <div class="form-group mb-4">
+                                <label class="sr-only">Area de interes</label>
+                                <select name="area" class="form-control">
+                                    <option>Agencia digital</option>
+                                    <option>Arquiteccturas</option>
+                                    <option>Big data</option>
+                                    <option>Ciberseguridad</option>
+                                    <option>Consultoría ERP</option>
+                                    <option>Consultoría estratégica y de negocio</option>
+                                    <option>Consultoría Tecnológica</option>
+                                    <option>DataScience and AI</option>
+                                    <option>Desarrollo de softeware</option>
+                                    <option>Hardware y Comunicaciones</option>
+                                    <option>Perfiles corporativos</option>
+                                    <option>QA and testing</option>
+                                    <option>Sistemas/BBDD/Redes</option>
+                                    <option>Soporte a usuarios y operación</option>
+                                    <option>Otros...</option>
+                                </select>
+                            </div>
                             <input name="login" id="login" class="btn btn-block login-btn mb-4" type="submit" value="Login"/>
                             <div>
                                 <%= request.getAttribute("mensaje") == null ? "" : request.getAttribute("mensaje") %>

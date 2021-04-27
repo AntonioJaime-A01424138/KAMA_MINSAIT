@@ -25,8 +25,10 @@ public class RegisterController extends HttpServlet{
         String curp = request.getParameter("curp");
         String correo = request.getParameter("email");
         String password = request.getParameter("password");
+        String formacion = request.getParameter("formacion");
+        String area = request.getParameter("area");
 
-        Candidato candidato = new Candidato(nombre, telefono, correo, curp, 0, password);
+        Candidato candidato = new Candidato(nombre, telefono, correo, curp, 0, password, formacion, area);
 
         RegisterDao registerDao = new RegisterDao();
 
@@ -35,7 +37,7 @@ public class RegisterController extends HttpServlet{
             if(n){
                 request.getRequestDispatcher("WEB-INF/index.jsp").forward(request,response);
             }else{
-                request.setAttribute("mensaje","El curp escrito ya existe");
+                request.setAttribute("mensaje","El curp o correo ya existe");
                 request.getRequestDispatcher("register.jsp").forward(request,response);
             }
         }

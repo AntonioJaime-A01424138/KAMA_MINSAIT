@@ -12,7 +12,7 @@ $(document).ready(() => {
                 $("#telefono").html(data.telefono)
                 $("#correo").html(data.correo)
                 $("#curp").html(data.curp)
-                $("#miid").val(data.idCandidato)
+                $("#idCandidato").val(data.idCandidato)
 
             },
             error: function(xhr, statusText){

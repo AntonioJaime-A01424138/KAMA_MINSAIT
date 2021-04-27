@@ -20,6 +20,13 @@ public class TablesCDao implements ITablesCDao {
             Connection connection = MySQLConnection.getConnection();
             PreparedStatement cuentaPS = connection.prepareStatement(candidatoquery);
             ResultSet cuentaRS = cuentaPS.executeQuery();
+
+            String formacion_sql ="select Formacion from formacionacademica where Candidato_idCandidato = ?";
+            String area_sql = "Select AreaInteres from areasinteres where Candidato_idCandidato = ?";
+
+            PreparedStatement ps_form = connection.prepareStatement(formacion_sql);
+            PreparedStatement ps_area = connection.prepareStatement(area_sql);
+
             while (cuentaRS.next()) {
 
                 Candidato ElCandidato = new Candidato();
@@ -29,8 +36,24 @@ public class TablesCDao implements ITablesCDao {
                 ElCandidato.setCorreo(cuentaRS.getString("Correo"));
                 ElCandidato.setCurp(cuentaRS.getString("CURP"));
                 ElCandidato.setEstatus(cuentaRS.getInt("Estatus"));
+
+                ps_form.setInt(1,ElCandidato.getIdCandidato());
+                ps_area.setInt(1,ElCandidato.getIdCandidato());
+
+                ResultSet rs_form = ps_form.executeQuery();
+                ResultSet rs_area = ps_area.executeQuery();
+
+                if (rs_form.next()) {
+                    ElCandidato.setFormacion(rs_form.getString(1));
+                }
+
+                if (rs_area.next()){
+                    ElCandidato.setArea(rs_area.getString(1));
+                }
+
                 listaCandidatos.add(ElCandidato);
             }
+
             connection.close();
             return listaCandidatos;
 

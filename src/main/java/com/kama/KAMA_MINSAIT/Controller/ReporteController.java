@@ -22,13 +22,14 @@ public class ReporteController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String idcandidato = request.getParameter("idCandidato");
-        String report = "/WEB-INF/reports/Reporte.jasper";
+        String report = "/WEB-INF/reports/Blank_A4.jasper";
         File file = new File(getServletContext().getRealPath(report));
         InputStream input = new FileInputStream(file);
         // Para enviar parámetros al reporte se usa Map
         // clave-valor
         Map parameters = new HashMap();
-        parameters.put("idCandidato",idcandidato);
+        parameters.put("IdCandidato",idcandidato);
+        parameters.put("imagen", getClass().getResourceAsStream("/Logo_minsait.jpg"));
 
         //
         response.setContentType("application/pdf");

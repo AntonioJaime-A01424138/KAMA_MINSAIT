@@ -18,13 +18,16 @@ public class RegisterDao implements IRegisterDao{
 
         String ins_sql = "Insert into Candidato(Nombre,Telefono,Correo,CURP,Estatus,Password) " +
                 "values(?,?,?,?,?,SHA2(?,224))";
-        String curp_sql = "Select count(*) from Candidato where Curp = ?";
+        String curp_sql = "Select count(*) from Candidato where Curp = ? or Correo =?";
+        String id_sql = "Select idCandidato from Candidato where Curp = ? or Correo =?";
+
 
         try{
             Connection conexion = MySQLConnection.getConnection();
             PreparedStatement ps_curp = conexion.prepareStatement(curp_sql);
 
             ps_curp.setString(1,candidato.getCurp());
+            ps_curp.setString(2, candidato.getCorreo());
 
             ResultSet rs_curp = ps_curp.executeQuery();
 
@@ -48,7 +51,46 @@ public class RegisterDao implements IRegisterDao{
                     System.out.println();
 
                     ps.executeUpdate();
-                    System.out.println("Ejecute esto");
+
+                    //Para sacar el id
+                    PreparedStatement ps_id = conexion.prepareStatement(id_sql);
+                    ps_id.setString(1,candidato.getCurp());
+                    ps_id.setString(2,candidato.getCorreo());
+
+                    ResultSet rs_id = ps_id.executeQuery();
+
+                    if(rs_id.next()){
+
+                        System.out.println(rs_id.getInt(1));
+
+                        //Puntajes
+                        String puntaje_sql = "INSERT INTO PuntajesTotal(Candidato_idCandidato) VALUES(?)";
+                        PreparedStatement ps_puntaje = conexion.prepareStatement(puntaje_sql);
+                        ps_puntaje.setInt(1,rs_id.getInt(1));
+
+                        ps_puntaje.executeUpdate();
+
+                        //Formacion
+                        String form_sql = "insert into formacionacademica(Formacion, Candidato_idCandidato) values(?,?)";
+                        PreparedStatement ps_form = conexion.prepareStatement(form_sql);
+                        ps_form.setString(1,candidato.getFormacion());
+                        ps_form.setInt(2,rs_id.getInt(1));
+
+                        ps_form.executeUpdate();
+                        System.out.println("form");
+
+                        //Area
+                        String area_sql = "insert into areasinteres(Candidato_idCandidato, AreaInteres) values(?,?)";
+                        PreparedStatement ps_area = conexion.prepareStatement(area_sql);
+                        ps_area.setInt(1,rs_id.getInt(1));
+                        ps_area.setString(2,candidato.getArea());
+
+                        ps_area.executeUpdate();
+                        System.out.println("area");
+                    }
+
+
+
                     return true;
                 }
             }else{

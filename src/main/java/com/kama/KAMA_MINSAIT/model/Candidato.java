@@ -10,17 +10,21 @@ public class Candidato implements Serializable {
     private String curp;
     private int estatus;
     private String password;
+    private String formacion;
+    private String area;
 
     public Candidato() {
     }
 
-    public Candidato(String nombre, String telefono, String correo, String curp, int estatus, String password) {
+    public Candidato(String nombre, String telefono, String correo, String curp, int estatus, String password, String formacion, String area) {
         this.nombre = nombre;
         this.telefono = telefono;
         this.correo = correo;
         this.curp = curp;
         this.estatus = estatus;
         this.password = password;
+        this.formacion = formacion;
+        this.area = area;
     }
 
     public int getIdCandidato() {
@@ -90,5 +94,21 @@ public class Candidato implements Serializable {
                 ", estatus=" + estatus + '\'' +
                 ", password='" + password + '\'' +
                 '}';
+    }
+
+    public String getFormacion() {
+        return formacion;
+    }
+
+    public void setFormacion(String formacion) {
+        this.formacion = formacion;
+    }
+
+    public String getArea() {
+        return area;
+    }
+
+    public void setArea(String area) {
+        this.area = area;
     }
 }

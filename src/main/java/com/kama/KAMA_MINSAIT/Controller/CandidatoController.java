@@ -24,6 +24,7 @@ public class CandidatoController extends HttpServlet {
                 request.setAttribute("mensaje","No tienes acceso, Inicia sesion");
                 request.getRequestDispatcher("WEB-INF/index.jsp").forward(request,response);
             }
+
         }catch (Exception ex){
             System.out.println(ex.getMessage());
         }
