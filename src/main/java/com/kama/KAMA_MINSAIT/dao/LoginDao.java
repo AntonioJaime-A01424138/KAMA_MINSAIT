@@ -73,6 +73,36 @@ public class LoginDao implements ILoginDao{
                 candidato.setEstatus(resultSet.getInt("Estatus"));
                 candidato.setPassword(resultSet.getString("Password"));
 
+                String id_sql = "Select idCandidato from Candidato where Curp = ? or Correo =?";
+                //Para sacar el id
+                PreparedStatement ps_id = conexion.prepareStatement(id_sql);
+                ps_id.setString(1,candidato.getCurp());
+                ps_id.setString(2,candidato.getCorreo());
+
+                ResultSet rs_id = ps_id.executeQuery();
+
+                if(rs_id.next()){
+
+                    //Area de interes
+                    String area_sql = "Select AreaInteres from areasinteres where Candidato_idCandidato = ?";
+                    PreparedStatement ps_area = conexion.prepareStatement(area_sql);
+                    ps_area.setInt(1,rs_id.getInt(1));
+                    ResultSet rs_area = ps_area.executeQuery();
+                    if(rs_area.next()){
+                        candidato.setArea(rs_area.getString(1));
+                    }
+
+                    //Formacion
+
+                    String form_sql = "Select Formacion from formacionacademica where Candidato_idCandidato = ?";
+                    PreparedStatement ps_form = conexion.prepareStatement(form_sql);
+                    ps_form.setInt(1,rs_id.getInt(1));
+                    ResultSet rs_form = ps_form.executeQuery();
+                    if(rs_form.next()){
+                        candidato.setFormacion(rs_form.getString(1));
+                    }
+                }
+
             }
         }catch(Exception ex){
             System.out.println(ex.getMessage());

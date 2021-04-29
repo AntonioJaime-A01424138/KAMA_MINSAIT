@@ -173,9 +173,9 @@
                         <!-- partial:partials/_footer.html -->
                         <footer class="footer">
                             <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                                <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2021.  Premium <a
-                                        href="https://www.bootstrapdash.com/"
-                                        target="_blank">Bootstrap admin template</a> from BootstrapDash. All rights reserved.</span>
+                                <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">
+                                    <img src="${pageContext.request.contextPath}/images/Minsait-logo.png" width="100px" height="50px">
+                                </span>
                             </div>
                         </footer>
 

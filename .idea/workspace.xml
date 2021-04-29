@@ -9,54 +9,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5868891f-df0d-4491-8480-c6b60687909d" name="Default Changelist" comment="2">
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+    <list default="true" id="5868891f-df0d-4491-8480-c6b60687909d" name="Default Changelist" comment="3">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/Controller/HomeCandidato.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/Controller/CandidatoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/Controller/CandidatoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/Controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/Controller/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/Controller/ReporteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/Controller/ReporteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/dao/RegisterDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/dao/RegisterDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/dao/TablesCDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/dao/TablesCDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/model/Candidato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/model/Candidato.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/dao/LoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/dao/LoginDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/utility/MySQLConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/utility/MySQLConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Perfi_individual.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Perfil.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Perfil.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Home_Candidato.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Home_Candidato.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Home_UsuarioM.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Home_UsuarioM.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/reports/Reporte.jasper" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/reports/resultadoscandidato.jasper" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/home_usuariom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/home_usuariom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Parapruebas.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Parapruebas2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/cosas.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/inicio_admin.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/vertical-layout-light/_sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scss/vertical-layout-light/_sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/vertical-layout-light/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scss/vertical-layout-light/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/Perfi_individual.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/Perfil.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/Home_Candidato.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/Home_Candidato.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/Home_UsuarioM.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/Home_UsuarioM.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/Controller/CandidatoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/Controller/CandidatoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/Controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/Controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/Controller/LogoutController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/Controller/LogoutController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/Controller/PuntajeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/Controller/PuntajeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/Controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/Controller/RegisterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/Controller/ReporteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/Controller/ReporteController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/Controller/UsuarioMinsaitController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/Controller/UsuarioMinsaitController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/dao/ILoginDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/dao/ILoginDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/dao/IRegisterDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/dao/IRegisterDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/dao/ITablesCDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/dao/ITablesCDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/Parapruebas.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/Parapruebas2.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/dao/LoginDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/dao/LoginDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/dao/RegisterDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/dao/RegisterDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/dao/TablesCDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/dao/TablesCDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/model/Candidato.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/model/Candidato.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/model/PuntajesTotal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/model/PuntajesTotal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/model/UsuarioMinsait.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/model/UsuarioMinsait.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/utility/MySQLConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/utility/MySQLConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/reports/Reporte.jasper" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/reports/resultadoscandidato.jasper" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/js/home_usuariom.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/js/home_usuariom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/cosas.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/inicio_admin.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kama/KAMA_MINSAIT/Controller/CandidatoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kama/KAMA_MINSAIT/Controller/CandidatoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kama/KAMA_MINSAIT/Controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kama/KAMA_MINSAIT/Controller/RegisterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kama/KAMA_MINSAIT/Controller/ReporteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kama/KAMA_MINSAIT/Controller/ReporteController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kama/KAMA_MINSAIT/dao/RegisterDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kama/KAMA_MINSAIT/dao/RegisterDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kama/KAMA_MINSAIT/dao/TablesCDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kama/KAMA_MINSAIT/dao/TablesCDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kama/KAMA_MINSAIT/model/Candidato.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kama/KAMA_MINSAIT/model/Candidato.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/scss/vertical-layout-light/_sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/scss/vertical-layout-light/_sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/scss/vertical-layout-light/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/scss/vertical-layout-light/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kama/KAMA_MINSAIT/dao/LoginDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kama/KAMA_MINSAIT/dao/LoginDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kama/KAMA_MINSAIT/utility/MySQLConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kama/KAMA_MINSAIT/utility/MySQLConnection.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -81,18 +81,15 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../V1/KAMA_MINSAIT" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\torti\Desktop\V2\KAMA_MINSAIT\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.kama.KAMA_MINSAIT.Controller" />
+    </key>
+  </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.64 2">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 8.5.64 2" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.64" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -364,7 +361,11 @@
       <workItem from="1619393679855" duration="3313000" />
       <workItem from="1619397164871" duration="15244000" />
       <workItem from="1619442624398" duration="10112000" />
-      <workItem from="1619479268699" duration="6262000" />
+      <workItem from="1619479268699" duration="6797000" />
+      <workItem from="1619558623049" duration="18337000" />
+      <workItem from="1619633123267" duration="14895000" />
+      <workItem from="1619716082226" duration="1212000" />
+      <workItem from="1619721735076" duration="1862000" />
     </task>
     <task id="LOCAL-00001" summary="2">
       <created>1619394037469</created>
@@ -387,7 +388,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619395312869</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="3">
+      <created>1619542702299</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1619542702299</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,6 +415,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2" />
-    <option name="LAST_COMMIT_MESSAGE" value="2" />
+    <MESSAGE value="3" />
+    <option name="LAST_COMMIT_MESSAGE" value="3" />
   </component>
 </project>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es_MX">
 
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Minsait</title>
+    <title>Perfil-${sessionScope.candidato.nombre}</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/vendors/feather/feather.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/vendors/ti-icons/css/themify-icons.css">
@@ -31,20 +31,14 @@
             <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="${pageContext.request.contextPath}/images/Minsait-logo.png" class="mr-2" alt="logo"/></a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
-            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-                <span class="icon-menu"></span>
-            </button>
             <ul class="navbar-nav navbar-nav-right">
                 <li class="nav-item nav-profile dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-                        <img src="${pageContext.request.contextPath}/images/faces/face28.jpg" alt="profile"/>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-                        <a class="dropdown-item">
+                        <form action="logout" method="get">
                             <i class="ti-power-off text-primary"></i>
-                            Logout
-                        </a>
-                    </div>
+                            <input name="logout" id="logout" type="submit" value="logout"/>
+                        </form>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -54,25 +48,34 @@
         <!-- partial:partials/_sidebar.html -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
             <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">
-                        <i class="icon-grid menu-icon"></i>
-                        <span class="menu-title">Inicio</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
-                        <i class="icon-grid-2 menu-icon"></i>
-                        <span class="menu-title">Videojuego</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-                        <i class="icon-head menu-icon"></i>
-                        <span class="menu-title">Perfil</span>
-                    </a>
-                </li>
+                <form action="cand" method="post">
+                    <button  type="submit" style="border: 0px; width:200px; background-color: white;">
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="icon-grid menu-icon" style="color: black;"></i>
+                                <span class="menu-title" style="color: black;">Inicio</span>
+                            </a>
+                        </li>
+                    </button>
+                </form>
+                <button type="button" style="border: 0px; width:200px; background-color: white;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://web.whatsapp.com/" target="_blank">
+                            <i class="icon-grid-2 menu-icon" style="color: black;"></i>
+                            <span class="menu-title" style="color: black;">Videojuego</span>
+                        </a>
+                    </li>
+                </button>
+                <form  action="cand" method="get">
+                    <button type="submit" style="border: 0px; width:200px; background-color: white;">
+                        <li  class="nav-item">
+                            <a class="nav-link">
+                                <i class="icon-head menu-icon" style="color: black;"></i>
+                                <span class="menu-title" style="color: black;">Perfil</span>
+                            </a>
+                        </li>
+                    </button>
+                </form>
             </ul>
         </nav>
         <!-- partial -->
@@ -82,30 +85,20 @@
                     <div class="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
                         <header class="resume-header pt-0 pt-md-4">
                             <div class="media flex-column flex-md-row">
-                                <img class="mr-3 img-fluid picture mx-4" src="${pageContext.request.contextPath}/images/faces/face3.jpg" alt="" style="width: 200px; height: 250px">
                                 <div class="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0">
                                     <div class="primary-info">
-                                        <h1 class="name mt-0 mb-4 text text-uppercase text-uppercase">Hubert Blaine Wolfeschlegelsteinhause <hr> </h1>
+                                        <h1 class="name mt-0 mb-4 text text-uppercase text-uppercase">${sessionScope.candidato.nombre}<hr> </h1>
                                         <ul class="list-unstyled">
-                                            <li class="mb-2"><i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i><p style="font-size: 20px;">Telefono :</p></li>
-                                            <li class="mb-2"><i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i><p style="font-size: 20px;">Correo</p></li>
-                                            <li class="mb-2"><i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i><p style="font-size: 20px;">Curp</p></li>
-                                            <li class="mb-2"><i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i><p style="font-size: 20px;">Edad</p></li>
-                                            <li class="mb-2"><i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i><p style="font-size: 20px;">Carrera</p></li>
-                                            <li class="mb-2"><i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i><p style="font-size: 20px;">Area de interes</p></li>
+                                            <li class="mb-2"><i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i><p style="font-size: 20px;"><strong>Teléfono:</strong> ${sessionScope.candidato.telefono}</p></li>
+                                            <li class="mb-2"><i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i><p style="font-size: 20px;"><strong>Correo:</strong> ${sessionScope.candidato.correo}</p></li>
+                                            <li class="mb-2"><i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i><p style="font-size: 20px;"><strong>Curp:</strong> ${sessionScope.candidato.curp}</p></li>
+                                            <li class="mb-2"><i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i><p style="font-size: 20px;"><strong>Formación académica:</strong> ${sessionScope.candidato.formacion}</p></li>
+                                            <li class="mb-2"><i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i><p style="font-size: 20px;"><strong>Área de interes:</strong> ${sessionScope.candidato.area}</p></li>
                                         </ul>
                                     </div>
                                 </div><!--//media-body-->
                             </div><!--//media-->
                         </header>
-                        <div class="resume-body p-5">
-
-                            <div class="row">
-
-                                <div class="col-lg-10">
-                                </div>
-                            </div><!--//row-->
-                        </div><!--//resume-body-->
                     </div>
                 </article>
             </div>
@@ -113,7 +106,9 @@
             <!-- partial:partials/_footer.html -->
             <footer class="footer">
                 <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                    <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2021.  Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash. All rights reserved.</span>
+                    <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">
+                        <img src="${pageContext.request.contextPath}/images/Minsait-logo.png" width="100px" height="50px">
+                    </span>
                 </div>
             </footer>
             <!-- partial -->

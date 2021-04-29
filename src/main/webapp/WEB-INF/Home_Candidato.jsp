@@ -3,18 +3,16 @@
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <<meta http-equiv="Content-Type" content="text/html; charset=utf8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Minsait</title>
+    <title>Minsait-Inicio</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/vendors/feather/feather.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/vendors/ti-icons/css/themify-icons.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/vendors/css/vendor.bundle.base.css">
     <!-- endinject -->
     <!-- Plugin css for this page -->
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/vendors/ti-icons/css/themify-icons.css">
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/js/pag_inicio_admin/select.dataTables.min.css">
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/vertical-layout-light/style.css">
@@ -31,20 +29,14 @@
             <a class="navbar-brand brand-logo mr-5" href="WEB-INF/Home_Candidato.jsp"><img src="${pageContext.request.contextPath}/images/Minsait-logo.png" class="mr-2" alt="logo"/></a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
-            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-                <span class="icon-menu"></span>
-            </button>
             <ul class="navbar-nav navbar-nav-right">
                 <li class="nav-item nav-profile dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-                        <img src="${pageContext.request.contextPath}/images/faces/face28.jpg" alt="profile"/>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-                        <a class="dropdown-item">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="profileDropdown">
+                        <form action="logout" method="get">
                             <i class="ti-power-off text-primary"></i>
-                            Logout
-                        </a>
-                    </div>
+                            <input name="logout" id="logout" type="submit" value="logout"/>
+                        </form>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -54,25 +46,34 @@
         <!-- partial:partials/_sidebar.html -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
             <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="WEB-INF/Home_Candidato.jsp">
-                        <i class="icon-grid menu-icon"></i>
-                        <span class="menu-title">Inicio</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
-                        <i class="icon-grid-2 menu-icon"></i>
-                        <span class="menu-title">Videojuego</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" href="WEB-INF/Perfil.jsp" aria-expanded="false" aria-controls="auth">
-                        <i class="icon-head menu-icon"></i>
-                        <span class="menu-title">Perfil</span>
-                    </a>
-                </li>
+                <form action="cand" method="post">
+                    <button  type="submit" style="border: 0px; width:200px; background-color: white;">
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="icon-grid menu-icon" style="color: black;"></i>
+                                <span class="menu-title" style="color: black;">Inicio</span>
+                            </a>
+                        </li>
+                    </button>
+                </form>
+                    <button type="button" style="border: 0px; width:200px; background-color: white;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://web.whatsapp.com/" target="_blank">
+                                <i class="icon-grid-2 menu-icon" style="color: black;"></i>
+                                <span class="menu-title" style="color: black;">Videojuego</span>
+                            </a>
+                        </li>
+                    </button>
+                <form  action="cand" method="get">
+                    <button type="submit" style="border: 0px; width:200px; background-color: white;">
+                        <li  class="nav-item">
+                            <a class="nav-link">
+                                <i class="icon-head menu-icon" style="color: black;"></i>
+                                <span class="menu-title" style="color: black;">Perfil</span>
+                            </a>
+                        </li>
+                    </button>
+                </form>
             </ul>
         </nav>
         <!-- partial -->
@@ -198,7 +199,9 @@
             <!-- partial:partials/_footer.html -->
             <footer class="footer">
                 <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                    <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2021.  Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash. All rights reserved.</span>
+                    <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">
+                        <img style="float: left;" src="${pageContext.request.contextPath}/images/Minsait-logo.png" width="100px" height="50px">
+                    </span>
                 </div>
             </footer>
             <!-- partial -->
