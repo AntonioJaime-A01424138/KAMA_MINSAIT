@@ -32,7 +32,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="telefono" class="sr-only">Nombre</label>
-                                <input type="text" name="telefono" id="telefono" value="" class="form-control" placeholder="Teléfono" required/>
+                                <input type="text" name="telefono" id="telefono" value="" class="form-control" placeholder="Teléfono (+52...)" required/>
                             </div>
                             <div class="form-group">
                                 <label for="curp" class="sr-only">Nombre</label>
@@ -55,22 +55,22 @@
                                 <input type="formacion" name="formacion" id="formacion" class="form-control" placeholder="Formacion Academica" required/>
                             </div>
                             <div class="form-group mb-4">
-                                <label class="sr-only">Area de interes</label>
+                                <label class="sr-only">&Aacute;rea de inter&eacute;s</label>
                                 <select name="area" class="form-control" required>
                                     <option>Agencia digital</option>
-                                    <option>Arquiteccturas</option>
+                                    <option>Arquitecturas</option>
                                     <option>Big data</option>
                                     <option>Ciberseguridad</option>
-                                    <option>Consultoría ERP</option>
-                                    <option>Consultoría estratégica y de negocio</option>
-                                    <option>Consultoría Tecnológica</option>
+                                    <option>Consultor&iacute;a ERP</option>
+                                    <option>Consultor&iacute;a estrat&eacutegica y de negocio</option>
+                                    <option>Consultor&iacute;a Tecnol&oacutegica</option>
                                     <option>DataScience and AI</option>
-                                    <option>Desarrollo de softeware</option>
+                                    <option>Desarrollo de software</option>
                                     <option>Hardware y Comunicaciones</option>
-                                    <option>Perfiles corporativos</option>
+                                    <option>Perf&iacute;les corporativos</option>
                                     <option>QA and testing</option>
                                     <option>Sistemas/BBDD/Redes</option>
-                                    <option>Soporte a usuarios y operación</option>
+                                    <option>Soporte a usuarios y operaci&oacute;n</option>
                                 </select>
                             </div>
                             <input name="login" id="login" class="btn btn-block login-btn mb-4" type="submit" value="Login"/>

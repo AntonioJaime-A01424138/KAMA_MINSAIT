@@ -22,6 +22,7 @@ public class ReporteController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String idcandidato = request.getParameter("idCandidato");
+        String curp = request.getParameter("curp");
         String report = "/WEB-INF/reports/Blank_A4.jasper";
         File file = new File(getServletContext().getRealPath(report));
         InputStream input = new FileInputStream(file);
@@ -29,11 +30,11 @@ public class ReporteController extends HttpServlet {
         // clave-valor
         Map parameters = new HashMap();
         parameters.put("IdCandidato",idcandidato);
-        parameters.put("imagen", getClass().getResourceAsStream("/Logo_minsait.jpg"));
+        parameters.put("imagen", getClass().getResourceAsStream("/Logo_minsait.png"));
 
         //
         response.setContentType("application/pdf");
-        response.setHeader("Content-Disposition", "attachment;filename="+idcandidato+".pdf");
+        response.setHeader("Content-Disposition", "attachment;filename="+curp+".pdf");
         try {
             // bytes del reporte, parametros, conexion
             byte[] bytes = JasperRunManager.runReportToPdf(input, parameters, MySQLConnection.getConnection());

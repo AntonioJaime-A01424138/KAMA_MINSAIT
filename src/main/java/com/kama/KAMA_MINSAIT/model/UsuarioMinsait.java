@@ -3,7 +3,7 @@ package com.kama.KAMA_MINSAIT.model;
 public class UsuarioMinsait {
     private int idUsuarioMinsait;
     private String nombre;
-    private int telefono;
+    private String telefono;
     private String correo;
     private String puesto;
     private String password;
@@ -11,7 +11,7 @@ public class UsuarioMinsait {
     public UsuarioMinsait() {
     }
 
-    public UsuarioMinsait(String nombre, int telefono, String correo, String puesto, String password) {
+    public UsuarioMinsait(String nombre, String telefono, String correo, String puesto, String password) {
         this.nombre = nombre;
         this.telefono = telefono;
         this.correo = correo;
@@ -35,11 +35,11 @@ public class UsuarioMinsait {
         this.nombre = nombre;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 

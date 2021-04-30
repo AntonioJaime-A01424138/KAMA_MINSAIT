@@ -89,11 +89,11 @@
                                     <div class="primary-info">
                                         <h1 class="name mt-0 mb-4 text text-uppercase text-uppercase">${sessionScope.candidato.nombre}<hr> </h1>
                                         <ul class="list-unstyled">
-                                            <li class="mb-2"><i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i><p style="font-size: 20px;"><strong>Teléfono:</strong> ${sessionScope.candidato.telefono}</p></li>
+                                            <li class="mb-2"><i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i><p style="font-size: 20px;"><strong>Tel&eacute;fono:</strong> ${sessionScope.candidato.telefono}</p></li>
                                             <li class="mb-2"><i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i><p style="font-size: 20px;"><strong>Correo:</strong> ${sessionScope.candidato.correo}</p></li>
                                             <li class="mb-2"><i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i><p style="font-size: 20px;"><strong>Curp:</strong> ${sessionScope.candidato.curp}</p></li>
-                                            <li class="mb-2"><i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i><p style="font-size: 20px;"><strong>Formación académica:</strong> ${sessionScope.candidato.formacion}</p></li>
-                                            <li class="mb-2"><i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i><p style="font-size: 20px;"><strong>Área de interes:</strong> ${sessionScope.candidato.area}</p></li>
+                                            <li class="mb-2"><i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i><p style="font-size: 20px;"><strong>Formaci&oacute;n acad&eacute;mica:</strong> ${sessionScope.candidato.formacion}</p></li>
+                                            <li class="mb-2"><i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i><p style="font-size: 20px;"><strong>&Aacute;rea de inter&eacute;s:</strong> ${sessionScope.candidato.area}</p></li>
                                         </ul>
                                     </div>
                                 </div><!--//media-body-->

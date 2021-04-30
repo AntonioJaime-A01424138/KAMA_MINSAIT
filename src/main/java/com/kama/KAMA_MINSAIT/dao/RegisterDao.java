@@ -18,8 +18,8 @@ public class RegisterDao implements IRegisterDao{
 
         String ins_sql = "Insert into Candidato(Nombre,Telefono,Correo,CURP,Estatus,Password) " +
                 "values(?,?,?,?,?,SHA2(?,224))";
-        String curp_sql = "Select count(*) from Candidato where Curp = ? or Correo =?";
-        String id_sql = "Select idCandidato from Candidato where Curp = ? or Correo =?";
+        String curp_sql = "Select count(*) from Candidato where CURP = ? or Correo =?";
+        String id_sql = "Select idCandidato from Candidato where CURP = ? or Correo =?";
 
 
         try{
@@ -64,14 +64,14 @@ public class RegisterDao implements IRegisterDao{
                         System.out.println(rs_id.getInt(1));
 
                         //Puntajes
-                        String puntaje_sql = "INSERT INTO PuntajesTotal(Candidato_idCandidato) VALUES(?)";
+                        String puntaje_sql = "INSERT INTO PuntajesTotal (Candidato_idCandidato) VALUES (?)";
                         PreparedStatement ps_puntaje = conexion.prepareStatement(puntaje_sql);
                         ps_puntaje.setInt(1,rs_id.getInt(1));
 
                         ps_puntaje.executeUpdate();
 
                         //Formacion
-                        String form_sql = "insert into formacionacademica(Formacion, Candidato_idCandidato) values(?,?)";
+                        String form_sql = "insert into FormacionAcademica (Formacion, Candidato_idCandidato) values (?,?)";
                         PreparedStatement ps_form = conexion.prepareStatement(form_sql);
                         ps_form.setString(1,candidato.getFormacion());
                         ps_form.setInt(2,rs_id.getInt(1));
@@ -80,7 +80,7 @@ public class RegisterDao implements IRegisterDao{
                         System.out.println("form");
 
                         //Area
-                        String area_sql = "insert into areasinteres(Candidato_idCandidato, AreaInteres) values(?,?)";
+                        String area_sql = "insert into AreasInteres (Candidato_idCandidato, AreaInteres) values (?,?)";
                         PreparedStatement ps_area = conexion.prepareStatement(area_sql);
                         ps_area.setInt(1,rs_id.getInt(1));
                         ps_area.setString(2,candidato.getArea());
@@ -88,8 +88,6 @@ public class RegisterDao implements IRegisterDao{
                         ps_area.executeUpdate();
                         System.out.println("area");
                     }
-
-
 
                     return true;
                 }

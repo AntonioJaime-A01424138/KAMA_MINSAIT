@@ -2,48 +2,29 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="KAMA_MINSAIT:war exploded" />
+      <artifact name="KAMA_MINSAIT:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5868891f-df0d-4491-8480-c6b60687909d" name="Default Changelist" comment="3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/Controller/HomeCandidato.java" afterDir="false" />
+    <list default="true" id="5868891f-df0d-4491-8480-c6b60687909d" name="Default Changelist" comment="4">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/Controller/RegisterUsuarioMController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/Controller/ReporteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/Controller/ReporteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/dao/LoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/dao/LoginDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/utility/MySQLConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/utility/MySQLConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Perfi_individual.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Perfil.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Perfil.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/dao/RegisterDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/dao/RegisterDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/dao/TablesCDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kama/KAMA_MINSAIT/dao/TablesCDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Home_Candidato.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Home_Candidato.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Home_UsuarioM.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Home_UsuarioM.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Parapruebas.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Parapruebas2.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/cosas.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/inicio_admin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Perfil.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Perfil.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/vertical-layout-light/_sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scss/vertical-layout-light/_sidebar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/vertical-layout-light/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scss/vertical-layout-light/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/Perfi_individual.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/Perfil.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/Home_Candidato.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/Home_Candidato.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/Home_UsuarioM.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/Home_UsuarioM.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/Parapruebas.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/Parapruebas2.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/dao/LoginDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/dao/LoginDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/utility/MySQLConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/classes/com/kama/KAMA_MINSAIT/utility/MySQLConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/cosas.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/inicio_admin.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/scss/vertical-layout-light/_sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/scss/vertical-layout-light/_sidebar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/scss/vertical-layout-light/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/target/KAMA_MINSAIT-1.0/scss/vertical-layout-light/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kama/KAMA_MINSAIT/dao/LoginDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kama/KAMA_MINSAIT/dao/LoginDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kama/KAMA_MINSAIT/utility/MySQLConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kama/KAMA_MINSAIT/utility/MySQLConnection.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +34,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -90,6 +71,17 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.64 2">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 8.5.64 2" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.64" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -365,7 +357,7 @@
       <workItem from="1619558623049" duration="18337000" />
       <workItem from="1619633123267" duration="14895000" />
       <workItem from="1619716082226" duration="1212000" />
-      <workItem from="1619721735076" duration="1862000" />
+      <workItem from="1619721735076" duration="14915000" />
     </task>
     <task id="LOCAL-00001" summary="2">
       <created>1619394037469</created>
@@ -395,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619542702299</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="4">
+      <created>1619726986220</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1619726986220</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,6 +415,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2" />
     <MESSAGE value="3" />
-    <option name="LAST_COMMIT_MESSAGE" value="3" />
+    <MESSAGE value="4" />
+    <option name="LAST_COMMIT_MESSAGE" value="4" />
   </component>
 </project>

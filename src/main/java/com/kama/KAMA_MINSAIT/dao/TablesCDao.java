@@ -21,8 +21,8 @@ public class TablesCDao implements ITablesCDao {
             PreparedStatement cuentaPS = connection.prepareStatement(candidatoquery);
             ResultSet cuentaRS = cuentaPS.executeQuery();
 
-            String formacion_sql ="select Formacion from formacionacademica where Candidato_idCandidato = ?";
-            String area_sql = "Select AreaInteres from areasinteres where Candidato_idCandidato = ?";
+            String formacion_sql ="select Formacion from FormacionAcademica where Candidato_idCandidato = ?";
+            String area_sql = "Select AreaInteres from AreasInteres where Candidato_idCandidato = ?";
 
             PreparedStatement ps_form = connection.prepareStatement(formacion_sql);
             PreparedStatement ps_area = connection.prepareStatement(area_sql);

@@ -12,7 +12,7 @@ public class LoginDao implements ILoginDao{
     @Override
     public String getUserType(String email) {
         String sqlCandidato = "SELECT COUNT(idCandidato) as conteo FROM Candidato WHERE Correo = ?";
-        String sqlUsuarioMinsait = "SELECT COUNT(idUsuariominsait) as conteo FROM Usuariominsait WHERE Correo = ?";
+        String sqlUsuarioMinsait = "SELECT COUNT(idUsuarioMinsait) as conteo FROM UsuarioMinsait WHERE Correo = ?";
 
         try{
             Connection conexion = MySQLConnection.getConnection();
@@ -73,7 +73,7 @@ public class LoginDao implements ILoginDao{
                 candidato.setEstatus(resultSet.getInt("Estatus"));
                 candidato.setPassword(resultSet.getString("Password"));
 
-                String id_sql = "Select idCandidato from Candidato where Curp = ? or Correo =?";
+                String id_sql = "Select idCandidato from Candidato where CURP = ? or Correo =?";
                 //Para sacar el id
                 PreparedStatement ps_id = conexion.prepareStatement(id_sql);
                 ps_id.setString(1,candidato.getCurp());
@@ -84,7 +84,7 @@ public class LoginDao implements ILoginDao{
                 if(rs_id.next()){
 
                     //Area de interes
-                    String area_sql = "Select AreaInteres from areasinteres where Candidato_idCandidato = ?";
+                    String area_sql = "Select AreaInteres from AreasInteres where Candidato_idCandidato = ?";
                     PreparedStatement ps_area = conexion.prepareStatement(area_sql);
                     ps_area.setInt(1,rs_id.getInt(1));
                     ResultSet rs_area = ps_area.executeQuery();
@@ -94,7 +94,7 @@ public class LoginDao implements ILoginDao{
 
                     //Formacion
 
-                    String form_sql = "Select Formacion from formacionacademica where Candidato_idCandidato = ?";
+                    String form_sql = "Select Formacion from FormacionAcademica where Candidato_idCandidato = ?";
                     PreparedStatement ps_form = conexion.prepareStatement(form_sql);
                     ps_form.setInt(1,rs_id.getInt(1));
                     ResultSet rs_form = ps_form.executeQuery();
@@ -112,7 +112,7 @@ public class LoginDao implements ILoginDao{
 
     @Override
     public UsuarioMinsait verificaUsuarioMinsait(String email, String password) {
-        String sql = "SELECT idUsuariominsait, Nombre, Telefono, Puesto, Password, Correo FROM Usuariominsait WHERE Correo = ? AND Password = SHA2(?,224)";
+        String sql = "SELECT idUsuarioMinsait, Nombre, Telefono, Puesto, Password, Correo FROM UsuarioMinsait WHERE Correo = ? AND Password = SHA2(?,224)";
         UsuarioMinsait usuarioMinsait = null;
         try{
             Connection conexion = MySQLConnection.getConnection();

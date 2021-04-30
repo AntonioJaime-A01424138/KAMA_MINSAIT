@@ -202,7 +202,7 @@
                         <h4>Información personal</h4>
                         <form action="reporte" method="post">
                             <input type="hidden" name="idCandidato" id="idCandidato" value=""/>
-                              <input type="submit" value="Descargar"/>
+                            <input type="submit" value="Descargar"/>
                         </form>
                         <table class="table table-hover table-primary">
                             <tbody>
@@ -264,6 +264,11 @@
 
                     <!-- Modal footer -->
                     <div class="modal-footer">
+                        <form action="reporte" method="post">
+                            <input type="hidden" name="idCandidato" id="idCandidato" value=""/>
+                            <input type="hidden" name="curp" id="" value="curp"/>
+                            <button type="submit" value="Descargar"> </button>
+                        </form>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
 

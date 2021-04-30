@@ -134,67 +134,41 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12 grid-margin stretch-card">
-                        <div class="card card-dark-blue">
+                    <div class="col-md-3 mb-4 stretch-card transparent">
+                        <div class="card card-light-danger">
                             <div class="card-body">
-                                <h2 class="mb-4 font-weight-bold"> Pasos: </h2>
-                                <div class="d-flex">
-                                    <div class="ml-2">
+                                <p class="mb-4 font-weight-bold" style="font-size: 18px">Rel&aacutejate:</p>
+                                <p style="font-size: 16px">En Minsait queremos conocer tu aut&eacutentico yo, saber qu&eacute te motiva en nuestra empresa y qu&eacute puedes aportar al equipo.</p>
 
-                                        <p class="mb-4" style="font-size: 16px"> Agradecemos tu interés para formar parte del equipo Indra. A continuación te presentaremos los pasos a seguir para llevar a cabo tu proceso de selección:</p>
-
-                                        <p class="mb-4 ml-4" style="font-size: 16px">Asegúrate de explorar las pestañas disponibles que tenemos para tí.</p>
-
-                                        <p class="mb-4 ml-4" style="font-size: 16px">Revisa tu información personal y el horario en el que se te permitirá llevar a cabo tu prueba. </p>
-
-                                        <p class="mb-4 ml-4" style="font-size: 16px">Ya habiendo finalizado tu prueba, nos pondremos en contacto contigo.</p>
-
-                                        <p class="mb-4 ml-4" style="font-size: 16px">En caso de tener alguna duda comunícate con nosotros a través de nuestro correo.
-                                        </p>
-                                    </div>
-                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4 stretch-card transparent">
+                        <div class="card card-light-blue">
+                            <div class="card-body">
+                                <p class="mb-4 font-weight-bold" style="font-size: 18px">Inf&oacutermate:</p>
+                                <p style="font-size: 16px">Encuentra en nuestra p&aacutegina web toda la informaci&oacuten sobre nuestra divisi&oacuten, las soluciones que ofrecemos y el tipo de proyecto que realizamos.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-3 mb-4 stretch-card transparent">
-                            <div class="card card-light-danger">
-                                <div class="card-body">
-                                    <p class="mb-4 font-weight-bold" style="font-size: 18px">Relájate:</p>
-                                    <p style="font-size: 16px">En Minsait queremos conocer tu auténtico yo, saber qué te motiva en nuestra empresa y qué puedes aportar al equipo.</p>
-
-                                </div>
+                    <div class="col-md-3 mb-4 stretch-card transparent">
+                        <div class="card card-light-danger">
+                            <div class="card-body">
+                                <p class="mb-4 font-weight-bold" style="font-size: 18px" >S&eacute tu mismo/a:</p>
+                                <p style="font-size: 16px">Es importante que te muestres tal y como eres. Esto nos permitir&aacute conocerte un poco m&aacutes y saber en qu&eacute equipo encajaras..</p>
                             </div>
                         </div>
-                        <div class="col-md-3 mb-4 stretch-card transparent">
-                            <div class="card card-light-blue">
-                                <div class="card-body">
-                                    <p class="mb-4 font-weight-bold" style="font-size: 18px">Infórmate:</p>
-                                    <p style="font-size: 16px">Encuentra en nuestra página web toda la información sobre nuestra división, las soluciones que ofrecemos y el tipo de proyecto que realizamos.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 mb-4 stretch-card transparent">
-                            <div class="card card-light-danger">
-                                <div class="card-body">
-                                    <p class="mb-4 font-weight-bold" style="font-size: 18px" >Sé tu mismo/a:</p>
-                                    <p style="font-size: 16px">Es importante que te muestres tal y como eres. Esto nos permitirá conocerte un poco más y saber en qué equipo encajaras..</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-4 stretch-card transparent">
-                            <div class="card card-light-blue">
-                                <div class="card-body">
-                                    <p class="mb-4 font-weight-bold" style="font-size: 18px">Creatividad al poder:</p>
-                                    <p style="font-size: 16px">La metodología tradicional no es la más efectiva. Busca nuevas vías de enfrentarse ante un problema y seguro descubrimos tu lado más creativo.</p>
-                                </div>
+                    </div>
+                    <div class="col-md-3 mb-4 stretch-card transparent">
+                        <div class="card card-light-blue">
+                            <div class="card-body">
+                                <p class="mb-4 font-weight-bold" style="font-size: 18px">Creatividad al poder:</p>
+                                <p style="font-size: 16px">La metodolog&iacutea tradicional no es la m&aacutes efectiva. Busca nuevas v&iacuteas de enfrentarse ante un problema y seguro descubrimos tu lado m&aacutes creativo.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
             <!-- content-wrapper ends -->
             <!-- partial:partials/_footer.html -->
             <footer class="footer">
